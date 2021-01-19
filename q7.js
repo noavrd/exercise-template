@@ -4,7 +4,7 @@ function run() {
     let out = "";
     let x = [];
     x.push(input);
-     out = x.sort();
+    out = x.sort();
 
     output.innerText = out;
 }
