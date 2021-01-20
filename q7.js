@@ -1,5 +1,6 @@
 function run(arr) {
-    console.log( arr.sort() );
+    
+    return( arr.sort() );
 }
 
-run([1,5,4,2,-1])
+run(arr);

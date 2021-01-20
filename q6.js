@@ -1,4 +1,5 @@
 function run(x) {
+    
     let num1 = x.toString();
     let arr = [num1[0]];
     for (let i = 0; i < num1.length; i++){
@@ -8,6 +9,6 @@ function run(x) {
             arr.push(num1[i]);
         }
     }
-    console.log(arr.join(''));
+    return arr.join('');
 }
-run(05485665);
+run(x);

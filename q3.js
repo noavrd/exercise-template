@@ -1,13 +1,20 @@
-function run() {
-    const input = document.getElementById("input").value;
-    const inputSec = document.getElementById("input2").value; // only for question 3
-    const output = document.getElementById("output");
-    let out = "";
-    let arr = [];
-    for(let i = 0; i < inputSec; i++){
-        arr.push(input[i]);
+function run(arr, n) {
+    
+    let sec = [];
+    if (n === null) {
+        return arr[0];
+    } else if (arr.length === 0 || n < 0) {
+        return [];
+    } else {
+        for (let i = 0; i < n; i++) {
+            if(arr[i] === undefined) {
+                 return sec;
+        } 
+        sec.push(arr[i]);
     }
-    out = arr;
 
-    output.innerText = out;
+        return sec;
+    }
+    
 }
+

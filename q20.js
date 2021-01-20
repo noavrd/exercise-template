@@ -1,7 +1,4 @@
 function run() {
-    const input = document.getElementById("input").value;
-    const output = document.getElementById("output");
-    let out = "";
     let arr = [];
     arr.push(input);
     let dup = [];
@@ -13,8 +10,5 @@ function run() {
             }
         }
     }
-     out = dup;
 
-/**/
-    output.innerText = out;
 }

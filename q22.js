@@ -7,4 +7,4 @@ function run(arr, sec) {
     }
     return arr;
 }
-run([20,1,13], [4,20,13]);
+run(arr, sec);
