@@ -1,11 +1,13 @@
-function run() {
-    const input = document.getElementById("input").value;
-    const output = document.getElementById("output");
-    let out = "";
-/**/
-    // write your code here
-    // out = input + 5;
+function run(year1, year2) {
 
-/**/
-    output.innerText = out;
+    let leap;
+    for (let i = year1; i <= year2; i++) {
+        if (i%4 === 0 && i%100 !== 0) {
+            console.log(i);
+        } else if (i%4 ===0 && i%100 === 0 && i%400 ===0) {
+            console.log(i);
+        }
+    }
 }
+
+run(1988, 2020);
