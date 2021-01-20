@@ -1,11 +1,11 @@
-function run() {
-    const input = document.getElementById("input").value;
-    const output = document.getElementById("output");
-    let out = "";
-/**/
-    // write your code here
-    // out = input + 5;
+function run(items, n) {
+    for (let i = 0; i < n; i++) {
+        if ( i === (n - 1) ){
+            return items[i-1];
+        }
+    }
 
-/**/
-    output.innerText = out;
 }
+
+let items = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+run(items,5);
