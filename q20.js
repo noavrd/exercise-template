@@ -15,6 +15,5 @@ function run(arr) {
             count--;
         }
     }
-    console.log(sec);
     return sec;
 }
