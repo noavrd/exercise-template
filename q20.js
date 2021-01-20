@@ -1,14 +1,20 @@
-function run() {
-    let arr = [];
-    arr.push(input);
-    let dup = [];
+function run(arr) {
 
-    for (let i = 0; i < arr.length; i++) {
-        for (let j = 0; j < dup.length; j++) {
-            if (arr[i] !== dup[j]){
-                dup.push(arr[i]);
-            }
+    let str;
+    let sec = [];
+    let count = arr.length;     //the function will count the array length
+
+
+    while (count > 0) {
+        str = arr[0];
+        arr.shift();
+        if  (!arr.includes(str) ) { // check if the value is in the array again
+            sec.push(str);
+        } else {
+            arr.push(str); //take the value to the end of the array
+            count--;
         }
     }
-
+    console.log(sec);
+    return sec;
 }
