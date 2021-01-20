@@ -1,10 +1,5 @@
-function run() {
-    const input = document.getElementById("input").value;
-    const output = document.getElementById("output");
-    let out = "";
-    let x = [];
-    x.push(input);
-    out = x.sort();
-
-    output.innerText = out;
+function run(arr) {
+    console.log( arr.sort() );
 }
+
+run([1,5,4,2,-1])

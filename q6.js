@@ -10,4 +10,4 @@ function run(x) {
     }
     console.log(arr.join(''));
 }
-run(05485665)
+run(05485665);
