@@ -1,16 +1,13 @@
-function run() {
-    const input = document.getElementById("input").value;
-    const output = document.getElementById("output");
-    let out = "";
+function run(arr) {
 
-    let count = 0;
-    let arr = [];
-    arr[count].push(input);
-    count++;
-
+    let newArr = [];
     for (let i = 0; i < arr.length; i++) {
-        out = "Element" + i + input;
+        newArr.push("Element " + i + " "+ "=" + " " +arr[i]);
     }
-
-    output.innerText = out;
+    console.log(newArr);
+    return newArr;
+    
 }
+//I did the question without enter input. instead the function gets an array and adds: Element i =
+
+run([13,12,11])
